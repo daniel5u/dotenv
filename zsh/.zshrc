@@ -30,7 +30,8 @@ zstyle ':vcs_info:git:*' formats ' %F{green}%b%f'
 zstyle ':vcs_info:git:*' actionformats ' %F{green}%b%f|%F{red}%a%f'
 precmd() { vcs_info }
 setopt prompt_subst
-PROMPT='[%F{blue}%1~%f]${vcs_info_msg_0_} : '
+PROMPT='[%F{blue}%1~%f]: '
+RPROMPT='${vcs_info_msg_0_}'
 
 # PATH
 export PATH="$HOME/.local/bin:$PATH"
