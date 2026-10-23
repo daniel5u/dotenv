@@ -12,6 +12,10 @@ autoload -Uz compinit && compinit
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' list-colors ''
+# Compact listing: no per-entry descriptions (they force one entry per line),
+# narrow columns, filled left to right
+zstyle ':completion:*' verbose no
+setopt list_packed list_rows_first
 
 # Keys: emacs mode, up/down search history by the typed prefix
 bindkey -e
