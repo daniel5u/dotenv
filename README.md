@@ -17,6 +17,6 @@ Machine-specific shell setup (conda init, installer PATH lines, ...) goes in `~/
 
 On macOS, Ghostty also reads `~/Library/Application Support/com.mitchellh.ghostty/config.ghostty` and lets it override `~/.config/ghostty`, so keep that file absent.
 
-- `nvim/` — Neovim config, based on [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) (needs Neovim 0.12+ for `vim.pack`)
+- `nvim/` — Neovim config, based on [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) (needs Neovim 0.12+ for `vim.pack`, and the `tree-sitter` CLI to build parsers: `brew install tree-sitter-cli`, or `cargo install --locked tree-sitter-cli` on Linux)
 - `ghostty/` — Ghostty terminal config (font: GoogleSansCode Nerd Font Mono)
 - `zsh/` — plain zsh config, no framework: built-in completion, `[~/path] branch :` prompt
